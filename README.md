@@ -25,5 +25,6 @@
 # Context Used
 
 - [MCP Authorization Spec](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md) (8.3k tokens)
+- [MCP Security best practices](https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices.md) (4.7k tokens)
 - OAuth 2.0 Authorization Server Metadata ([RFC8414](https://www.rfc-editor.org/rfc/rfc8414.txt)): `/.well-known/oauth-authorization-server` (10.8k tokens)
 - OAuth 2.0 Protected Resource Metadata ([RFC9728](https://www.rfc-editor.org/rfc/rfc9728.txt)): `/.well-known/oauth-protected-resource` (12k tokens)
