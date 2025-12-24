@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>simpler auth - copy-paste oauth for cloudflare workers</title>
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    a {
+        color: #0066cc;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 4px;
+    }
+</style>
+
+<body>
+    <h1>simpler auth</h1>
+    <p><em>copy-paste oauth for cloudflare workers</em></p>
+
+    <p>most auth libraries are massive. this is just templates you copy and customize.</p>
+
+    <p>no dependencies. no bloat. just ~200 lines of oauth that actually work.</p>
+
+    <p><a href="https://github.com/stars/janwilmake/lists/simpler-auth">→ browse templates</a></p>
+
+    <h2>oauth templates</h2>
+
+    <p><strong>github client</strong><br>
+        perfect for dev tools. pkce flow, custom scopes, secure sessions.</p>
+
+    <p><strong>𝕏 x (twitter) oauth</strong><br>
+        great for social apps. oauth 2.0 with pkce, csrf protection built-in.</p>
+
+    <p><strong>stripe payments</strong><br>
+        when you don't need accounts, just payment auth. revenue + access control.</p>
+
+    <p><strong>custom flows</strong><br>
+        modular templates for building your own oauth integrations.</p>
+
+    <h2>oauth providers</h2>
+
+    <p><strong>github oauth provider</strong><br>
+        zero-registration oauth provider. your domain is your client id.<br>
+    </p>
+
+    <p><strong>x oauth provider</strong><br>
+        zero-registration oauth provider. your domain is your client id.<br>
+    </p>
+
+
+    <p><strong>🟠 hackernews oauth provider</strong><br>
+        zero-registration oauth provider. your domain is your client id.<br>
+        <small>(currently blocked by hn, but the code works perfectly)</small><br>
+        <a href="https://hn.simplerauth.com/blog">→ read the full story</a>
+    </p>
+
+
+    <h2>why simpler?</h2>
+
+    <p>because auth doesn't need to be complicated:</p>
+    <ul>
+        <li>copy one file (~200 lines)</li>
+        <li>understand every line of code</li>
+        <li>customize however you want</li>
+        <li>deploy to cloudflare workers</li>
+        <li>done</li>
+    </ul>
+
+    <p>no massive node_modules. no mystery black boxes. just code you can read.</p>
+
+    <hr>
+
+    <p><small>built by <a href="https://x.com/janwilmake">janwilmake</a> because oauth shouldn't need to be
+            complicated</small></p>
+</body>
+
+</html>
