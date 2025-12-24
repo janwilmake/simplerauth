@@ -1,4 +1,6 @@
-| Package                                                               | Tokens                                                                                       | Demo                                       | Description                                                                              |
+Template
+
+| Template                                                              | Tokens                                                                                       | Demo                                       | Description                                                                              |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------- |
 | [cloudflare-oauth-provider](cloudflare-oauth-provider/)               | [17.7k](https://uithub.com/janwilmake/simplerauth/tree/main/cloudflare-oauth-provider)       | [open](https://cloudflare.simplerauth.com) | Login with Cloudflare - MCP-compatible OAuth provider for Cloudflare ecosystem           |
 | [github-oauth-cli-template](github-oauth-cli-template/)               | [2.5k](https://uithub.com/janwilmake/simplerauth/tree/main/github-oauth-cli-template)        | -                                          | Template for setting up GitHub OAuth in a CLI application                                |
@@ -13,3 +15,15 @@
 | [x-dorm-template](x-dorm-template/)                                   | [3.6k](https://uithub.com/janwilmake/simplerauth/tree/main/x-dorm-template)                  | -                                          | Template for X OAuth + DORM user management with Outerbase                               |
 | [x-oauth-middleware](x-oauth-middleware/)                             | [5.8k](https://uithub.com/janwilmake/simplerauth/tree/main/x-oauth-middleware)               | -                                          | X OAuth middleware template from first principles                                        |
 | [x-oauth-provider](x-oauth-provider/)                                 | [12.6k](https://uithub.com/janwilmake/simplerauth/tree/main/x-oauth-provider)                | [open](https://login.wilmake.com)          | X OAuth Provider using hostname as client_id - unlimited X authed apps                   |
+
+# Goals
+
+- Go against popular advice to abstract away auth using a prominent auth library
+- Be MCP compatible so you can use this in minimal MCP servers
+- To be used as code snippet as well as libraries
+
+# Context Used
+
+- [MCP Authorization Spec](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md) (8.3k tokens)
+- OAuth 2.0 Authorization Server Metadata ([RFC8414](https://www.rfc-editor.org/rfc/rfc8414.txt)): `/.well-known/oauth-authorization-server` (10.8k tokens)
+- OAuth 2.0 Protected Resource Metadata ([RFC9728](https://www.rfc-editor.org/rfc/rfc9728.txt)): `/.well-known/oauth-protected-resource` (12k tokens)
