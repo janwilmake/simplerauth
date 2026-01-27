@@ -1,0 +1,8 @@
+name = "hn-demo-simplerauth"
+main="./main.js"
+compatibility_date = "2025-06-26"
+dev.port = 3000
+routes = [
+  { pattern = "hn-demo.simplerauth.com", custom_domain = true }
+]
+assets.directory = "./"

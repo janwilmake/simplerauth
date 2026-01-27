@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplerAuth - Copy-paste OAuth for Cloudflare Workers</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6
+        }
+
+        h1 {
+            margin-bottom: 5px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left
+        }
+
+        th {
+            background: #f5f5f5
+        }
+
+        a {
+            color: #0066cc
+        }
+
+        .links {
+            margin: 15px 0;
+            font-size: 14px
+        }
+
+        .links a {
+            margin-right: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SimplerAuth</h1>
+    <p>Copy-paste OAuth for Cloudflare Workers. No bloat, just ~200 lines that work.</p>
+    <div class="links">
+        <a href="https://github.com/janwilmake/simplerauth">GitHub</a>
+        <a href="https://x.com/janwilmake/status/1930000480853471705">Vision</a>
+    </div>
+    <table>
+        <tr>
+            <th>Package</th>
+            <th>Tokens</th>
+            <th>Demo</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/cloudflare-oauth-provider">cloudflare-oauth-provider</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/cloudflare-oauth-provider">17.7k</a></td>
+            <td><a href="https://cloudflare.simplerauth.com">open</a></td>
+            <td>Login with Cloudflare - MCP-compatible OAuth provider</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/github-oauth-cli-template">github-oauth-cli-template</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/github-oauth-cli-template">2.5k</a></td>
+            <td>-</td>
+            <td>Template for GitHub OAuth in CLI apps</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/github-oauth-client-provider">github-oauth-client-provider</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/github-oauth-client-provider">7.9k</a></td>
+            <td>-</td>
+            <td>GitHub OAuth using hostname as client_id</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/github-oauth-middleware">github-oauth-middleware</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/github-oauth-middleware">1.8k</a></td>
+            <td>-</td>
+            <td>Simple GitHub OAuth middleware</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/github-oauth-provider">github-oauth-provider</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/github-oauth-provider">9.5k</a></td>
+            <td><a href="https://gh.simplerauth.com">open</a></td>
+            <td>GitHub OAuth Provider proxy</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/openrouter-oauth-provider">openrouter-oauth-provider</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/openrouter-oauth-provider">4.5k</a></td>
+            <td><a href="https://openrouter.simplerauth.com">open</a></td>
+            <td>MCP-compliant OAuth for OpenRouter API keys</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/parallel-oauth-provider">parallel-oauth-provider</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/parallel-oauth-provider">13.3k</a></td>
+            <td><a href="https://oauth.parallel.ai">open</a></td>
+            <td>Stateless OAuth for Parallel.ai API keys</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/janwilmake/simplerauth/tree/main/simplerauth-client">simplerauth-client</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/simplerauth-client">5.8k</a></td>
+            <td><a href="https://client.simplerauth.com">open</a></td>
+            <td>Zero-config OAuth client middleware</td>
+        </tr>
+        <tr>
+            <td><a
+                    href="https://github.com/janwilmake/simplerauth/tree/main/simplerauth-hn-oauth-client-demo">simplerauth-hn-oauth-client-demo</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/simplerauth-hn-oauth-client-demo">1.4k</a>
+            </td>
+            <td>-</td>
+            <td>HackerNews OAuth demo</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/janwilmake/simplerauth/tree/main/simplerauth">simplerauth</a></td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/simplerauth">1.0k</a></td>
+            <td><a href="https://simplerauth.com">open</a></td>
+            <td>Landing page</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/janwilmake/simplerauth/tree/main/x-dorm-template">x-dorm-template</a></td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/x-dorm-template">3.6k</a></td>
+            <td>-</td>
+            <td>X OAuth + DORM user management template</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/janwilmake/simplerauth/tree/main/x-oauth-middleware">x-oauth-middleware</a>
+            </td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/x-oauth-middleware">5.8k</a></td>
+            <td>-</td>
+            <td>X OAuth middleware from first principles</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/janwilmake/simplerauth/tree/main/x-oauth-provider">x-oauth-provider</a></td>
+            <td><a href="https://uithub.com/janwilmake/simplerauth/tree/main/x-oauth-provider">12.6k</a></td>
+            <td><a href="https://login.wilmake.com">open</a></td>
+            <td>X OAuth Provider - unlimited X authed apps</td>
+        </tr>
+    </table>
+    <p style="font-size:12px;color:#666">Built by <a href="https://x.com/janwilmake">@janwilmake</a></p>
+</body>
+
+</html>

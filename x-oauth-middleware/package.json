@@ -1,0 +1,11 @@
+{
+  "name": "simplerauth-x",
+  "version": "0.0.4",
+  "main": "simplerauth-x.ts",
+  "files": [
+    "simplerauth-x.ts"
+  ],
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250124.3"
+  }
+}

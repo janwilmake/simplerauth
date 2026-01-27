@@ -1,0 +1,4 @@
+name = "github-oauth-cli-proxy"
+compatibility_date = "2025-04-21"
+dev.port = 3000
+main = "proxy-worker.ts"

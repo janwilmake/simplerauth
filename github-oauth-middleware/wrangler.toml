@@ -1,0 +1,8 @@
+name = "github-oauth-middleware"
+compatibility_date = "2025-01-27"
+main = "template.ts"
+# set up your domain and ensure
+# the client you create at https://github.com/settings/developers
+# uses this domain with /callback appended as callback url
+route.pattern = "github.smootherauth.com"
+route.custom_domain = true
