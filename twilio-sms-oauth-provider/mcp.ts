@@ -61,9 +61,9 @@ export async function handleMcp(request: Request, env: Env): Promise<Response> {
       return jsonResponse({
         jsonrpc: "2.0",
         result: {
-          protocolVersion: "2024-11-05",
+          protocolVersion: "2025-11-25",
           capabilities: { tools: {} },
-          serverInfo: { name: "twilio-sms-oauth", version: "1.0.0" },
+          serverInfo: { name: "twilio-sms-oauth", version: "1.0.1" },
         },
         id,
       });
@@ -87,7 +87,7 @@ export async function handleMcp(request: Request, env: Env): Promise<Response> {
                     description: "The message to send",
                   },
                 },
-                required: ["to", "message"],
+                required: ["message"],
               },
             },
           ],
