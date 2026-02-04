@@ -27,7 +27,30 @@ export default {
     }
 
     // Validate the target hostname is in the allowed list
-    if (!allowedHostnames.includes(targetUrl.hostname)) {
+    if (
+      !allowedHostnames.find((hostname) => {
+        const chunks = targetUrl.hostname.split(".").reverse();
+
+        if (targetUrl.hostname === hostname) {
+          // localhost
+          return true;
+        }
+        let possible: string[] = [];
+
+        // something.wilmake.workers.dev
+        chunks.forEach((_, index, array) => {
+          if (index < 2) {
+            // need at least 1 complete chunks
+            return;
+          }
+          const hostname = array.slice(0, index).reverse().join(".");
+          possible.push(hostname);
+        });
+
+        return possible.includes(hostname);
+      })
+    ) {
+      console.log({ hostname: targetUrl.hostname, allowedHostnames });
       return new Response("Unauthorized redirect target", { status: 403 });
     }
 

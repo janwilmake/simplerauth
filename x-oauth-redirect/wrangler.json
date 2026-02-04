@@ -4,7 +4,7 @@
   "main": "worker.ts",
   "compatibility_date": "2026-01-01",
   "vars": {
-    "ALLOWED_HOSTNAMES": "localhost:3000,localhost:8787,freemyx.com,basedpeople.com"
+    "ALLOWED_HOSTNAMES": "localhost,basedpeople.com,wilmake.workers.dev,grokmake.com"
   },
   "routes": [{ "custom_domain": true, "pattern": "redirect.simplerauth.com" }]
 }

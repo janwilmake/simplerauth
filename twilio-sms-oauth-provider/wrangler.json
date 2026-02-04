@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+  "name": "twilio-sms-oauth-provider",
+  "account_id": "080fd9e0587416d2fa30ed1f527e2323",
+  "compatibility_date": "2026-01-24",
+  "main": "worker.ts",
+  "kv_namespaces": [
+    { "binding": "KV", "id": "a617bbcb1f1f425d9a0aa1eb56d588cc" }
+  ],
+  "env": {
+    "prod": {
+      "kv_namespaces": [
+        { "binding": "KV", "id": "a617bbcb1f1f425d9a0aa1eb56d588cc" }
+      ],
+      "routes": [{ "custom_domain": true, "pattern": "sms.wilmake.com" }]
+    }
+  }
+}
