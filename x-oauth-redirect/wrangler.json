@@ -4,7 +4,7 @@
   "main": "worker.ts",
   "compatibility_date": "2026-01-01",
   "vars": {
-    "ALLOWED_HOSTNAMES": "localhost,basedpeople.com,wilmake.workers.dev,grokmake.com"
+    "ALLOWED_HOSTNAMES": "localhost,basedpeople.com,wilmake.workers.dev,grokmake.com,wilmake.com"
   },
   "routes": [{ "custom_domain": true, "pattern": "redirect.simplerauth.com" }]
 }
